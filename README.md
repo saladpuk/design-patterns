@@ -9,9 +9,9 @@
 Pattern ทั้งหมดถูกแบ่งออกเป็น 3 กลุ่ม ตามวัตถุประสงค์ในการแก้ไขปัญหาของมันดังนี้
 
 * **Creational patterns** วัตถุประสงค์ของกลุ่มนี้คือ สร้าง object โดยที่ทำให้โปรแกรมของเรามีความยืดหยุ่นมากขึ้น และ โค้ดสามารถนำกลับมาใช้ใหม่ได้  ซึ่งภายในกลุ่มนี้มี patterns อยู่คือ
-  * Abstract factory pattern
-  * Builder pattern
   * [Factory method pattern](FactoryMethod.md)
+  * [Abstract factory pattern](AbstractFactory.md)
+  * Builder pattern
   * Prototype pattern
   * Singleton pattern
 
@@ -38,3 +38,8 @@ Pattern ทั้งหมดถูกแบ่งออกเป็น 3 กล
   * Strategy pattern
   * Template method pattern
   * Visitor pattern
+
+# Credit
+https://refactoring.guru  
+You can buy his book by click the image below.  
+[![img](https://refactoring.guru/images/patterns/book/web-cover-en.png)](https://refactoring.guru/design-patterns/book#buy-now)  

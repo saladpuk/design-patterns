@@ -3,10 +3,10 @@
 
 Define an interface for creating an object, but let subclasses decide which class to instantiate. The Factory method lets a class defer instantiation it uses to subclasses. (Gang Of Four)
 
-## 🏳️ เป้าหมายของ pattern นี้
+## ✌ เป้าหมายของ pattern นี้
 **Factory method** ต้องการจะสร้าง object โดยไม่ต้องกำหนดว่าตัว class ที่นำมาสร้างจริงๆคืออะไร
 
-## หลักการแบบสั้นๆ
+## 🎯 หลักการแบบสั้นๆ
 1. **Factory Method** จะมี abstract method 1 ตัว เอาไว้สร้าง object
 1. เมื่อ client ต้องการใช้ object ก็จะมาเรียก abstract method ตัวนั้น เพื่อเอา object ไปใช้
 1. Subclass เป็นคนกำหนดเองว่าจะสร้าง object จาก class ตัวไหน
@@ -80,23 +80,19 @@ Define an interface for creating an object, but let subclasses decide which clas
 1. จากภาพจะเห็นว่าเมื่อ client ต้องการจะสร้างปุ่มขึ้นมาซักปุ่ม ก็เพียงแค่เลือกว่าจะทำงานกับ `WindowsDialog` หรือ `WebDialog` เท่านั้น
 1. เมื่อ client ต้องการปุ่ม ก็เพียงเรียกใช้ `createButton` เราก็จะได้ Button object ที่เหมาะสมกับ environment ของเราไปใช้งานต่อได้เลย
 
-## ข้อดี
+## 👍 ข้อดี
 * ลดการเกิด `tight coupling` ระหว่าง **creator** กับ **concrete products**
 * ถูกหลัก `Single Responsibility Principle`
 * ถูกหลัก `Open/Closed Principle`
 
-## ข้อเสีย
+## 👎 ข้อเสีย
 * เพิ่มความซับซ้อนให้กับโค้ด เพราะต้องไปสร้าง class และ interface มากมาย
 
-## Code ตัวอย่าง
+## ‍‍📝 Code ตัวอย่าง
 ```
 using System;
 
-interface ITransport
-{
-    string Deliver();
-}
-
+// Factories
 abstract class Logistics
 {
     public string PlanDelivery()
@@ -107,31 +103,34 @@ abstract class Logistics
     
     public abstract ITransport CreateTransport();
 }
-
 class RoadLogistics : Logistics
 {
     public override ITransport CreateTransport()
         => new Truck();
 }
-
 class SeaLogistics : Logistics
 {
     public override ITransport CreateTransport()
         => new Ship();
 }
 
+// Products
+interface ITransport
+{
+    string Deliver();
+}
 class Truck : ITransport
 {
     public string Deliver() 
         => "Trucks deliver cargo by land.";
 }
-
 class Ship : ITransport
 {
     public string Deliver()
         => "Ships deliver cargo by sea.";
 }
 
+// Client
 class Program
 {
     static void Main(string[] args)
@@ -158,7 +157,7 @@ App: Launched with the SeaLogistics.
 Client: I'm not aware of the creator's class, but it still works. Logistics: The same creator's code has just worked with Ships deliver cargo by sea
 ```
 
-# Thank for your contents
+# Credit
 https://refactoring.guru  
-You can buy his book by click the book image below.  
+You can buy his book by click the image below.  
 [![img](https://refactoring.guru/images/patterns/book/web-cover-en.png)](https://refactoring.guru/design-patterns/book#buy-now)  
