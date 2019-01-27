@@ -11,7 +11,7 @@ Pattern ทั้งหมดถูกแบ่งออกเป็น 3 กล
 * **Creational patterns** วัตถุประสงค์ของกลุ่มนี้คือ สร้าง object โดยที่ทำให้โปรแกรมของเรามีความยืดหยุ่นมากขึ้น และ โค้ดสามารถนำกลับมาใช้ใหม่ได้  ซึ่งภายในกลุ่มนี้มี patterns อยู่คือ
   * [Factory method pattern](FactoryMethod.md)
   * [Abstract factory pattern](AbstractFactory.md)
-  * Builder pattern
+  * [Builder pattern](Builder.md)
   * Prototype pattern
   * Singleton pattern
 
