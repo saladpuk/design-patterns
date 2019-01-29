@@ -13,7 +13,7 @@ Pattern ทั้งหมดถูกแบ่งออกเป็น 3 กล
   * [Abstract factory pattern](AbstractFactory.md)
   * [Builder pattern](Builder.md)
   * [Singleton pattern](Singleton.md)
-  * Prototype pattern
+  * [Prototype pattern](Prototype.md)
 
 * **Structural patterns**  
 วัตถุประสงค์ของกลุ่มนี้คือ จัดการโครงสร้างของโปรแกรม เช่น class และ object แต่ละตัวจะประกอบกันยังไง โดยที่โปรแกรมจะต้องคงความยืดหยุ่นได้ และ ยังมีประสิทธิภาพเหมือนเดิม ซึ่งภายในกลุ่มนี้มี patterns อยู่คือ
