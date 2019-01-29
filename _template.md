@@ -1,5 +1,5 @@
-![img](assets/xxx.png)
-# Factory Method
+![img](assets/xxx)
+# XXX
 xxx
 
 ## ✌ เป้าหมายของ pattern นี้
@@ -9,7 +9,7 @@ xxx
 1. xxx
 
 ## 😢 ปัญหา
-![img](assets/xxx.png)
+![img](assets/xxx)
 xxx
 
 ## 😄 วิธีแก้ไข
