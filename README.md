@@ -21,7 +21,7 @@ Pattern ทั้งหมดถูกแบ่งออกเป็น 3 กล
   * Bridge pattern
   * Composite pattern
   * Decorator pattern
-  * Facade pattern
+  * [Facade pattern](Facade.md)
   * Flyweight pattern
   * Proxy pattern
 
