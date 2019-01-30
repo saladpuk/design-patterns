@@ -2,10 +2,10 @@
 # Prototype
 Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype.
 
-## ✌ เป้าหมายของ pattern นี้
+## 🎯 เป้าหมายของ pattern นี้
 ก๊อปปี้ object ตัวหนึ่ง ออกมาเป็นอีกตัวหนึ่ง โดยไม่ทำให้โค้ดของเราต้องไปยุ่งกับ class ต่างๆที่เกี่ยวข้องกับ object นั้นๆ
 
-## 🎯 หลักการแบบสั้นๆ
+## ✌ หลักการแบบสั้นๆ
 1. สร้าง interface ที่ใช้สำหรับก๊อปปี้/โคลน ออกมา 1 ตัว
 2. Class ไหนที่ต้องการให้มีความสามารถในการสร้างก๊อปปี้ object ก็ไปทำการ implement interface ที่ว่านั้นซะ
 3. การตั้งค่าเพิ่มเติมต่างๆสามารถไปใส่ไว้ใน subclass ได้
