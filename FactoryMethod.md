@@ -1,10 +1,9 @@
 ![img](assets/factorymethod/factory-method-mini.png)
 # Factory Method
-
 Define an interface for creating an object, but let subclasses decide which class to instantiate. The Factory method lets a class defer instantiation it uses to subclasses. (Gang Of Four)
 
 ## 🎯 เป้าหมายของ pattern นี้
-**Factory method** ต้องการจะสร้าง object โดยไม่ต้องกำหนดว่าตัว class ที่นำมาสร้างจริงๆคืออะไร
+สร้าง object โดยไม่ต้องกำหนดว่าตัว class ที่นำมาสร้างจริงๆคืออะไร โดยให้ subclass เป็นคนไปจัดการเอง
 
 ## ✌ หลักการแบบสั้นๆ
 1. **Factory Method** จะมี abstract method 1 ตัว เอาไว้สร้าง object
