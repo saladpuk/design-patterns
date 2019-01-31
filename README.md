@@ -20,7 +20,7 @@ Pattern ทั้งหมดถูกแบ่งออกเป็น 3 กล
   * [Adapter pattern](Adapter.md)
   * [Bridge pattern](Bridge.md)
   * Composite pattern
-  * Decorator pattern
+  * [Decorator pattern](Decorator.md)
   * [Facade pattern](Facade.md)
   * Flyweight pattern
   * Proxy pattern
