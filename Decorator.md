@@ -151,38 +151,38 @@ class MilkTea : IBeverage
 // Decorator
 abstract class ToppingDecorator : IBeverage
 {
-    protected IBeverage Wrappee;
+    private IBeverage wrappee;
     public ToppingDecorator(IBeverage beverage)
     {
-        this.Wrappee = beverage;
+        wrappee = beverage;
     }
 
-    public virtual string Description => Wrappee.Description;
-    public virtual int GetCost() => Wrappee.GetCost();
+    public virtual string Description => wrappee.Description;
+    public virtual int GetCost() => wrappee.GetCost();
 }
 // Concrete decorators
 class CondensedMilk : ToppingDecorator
 {
-    public override string Description => $"{Wrappee.Description} + ขมข้นหวาน";
-    public override int GetCost() => Wrappee.GetCost() + 10;
+    public override string Description => $"{base.Description} + ขมข้นหวาน";
+    public override int GetCost() => base.GetCost() + 10;
     public CondensedMilk(IBeverage beverage) : base(beverage) { }
 }
 class WhipCream : ToppingDecorator
 {
-    public override string Description => $"{Wrappee.Description} + วิปครีม";
-    public override int GetCost() => Wrappee.GetCost() + 13;
+    public override string Description => $"{base.Description} + วิปครีม";
+    public override int GetCost() => base.GetCost() + 13;
     public WhipCream(IBeverage beverage) : base(beverage) { }
 }
 class Caramel : ToppingDecorator
 {
-    public override string Description => $"{Wrappee.Description} + คาราเมล";
-    public override int GetCost() => Wrappee.GetCost() + 15;
+    public override string Description => $"{base.Description} + คาราเมล";
+    public override int GetCost() => base.GetCost() + 15;
     public Caramel(IBeverage beverage) : base(beverage) { }
 }
 class Pearl : ToppingDecorator
 {
-    public override string Description => $"{Wrappee.Description} + ไข่มุก";
-    public override int GetCost() => Wrappee.GetCost() + 7;
+    public override string Description => $"{base.Description} + ไข่มุก";
+    public override int GetCost() => base.GetCost() + 7;
     public Pearl(IBeverage beverage) : base(beverage) { }
 }
 
@@ -192,20 +192,20 @@ class Program
     {
         var coffee = new Coffee();
         Console.WriteLine("กาแฟธรรมดา");
-        Console.WriteLine($"{coffee.Description}, ราคา: {coffee.GetCost()}" + Environment.NewLine);
+        Console.WriteLine($"{coffee.Description}, ราคา: {coffee.GetCost()} {Environment.NewLine}");
 
         IBeverage extraCoffee = new CondensedMilk(coffee);
         extraCoffee = new WhipCream(extraCoffee);
         extraCoffee = new WhipCream(extraCoffee);
         extraCoffee = new Caramel(extraCoffee);
         Console.WriteLine("กาแฟพิเศษเพิ่มทอปปิ้ง");
-        Console.WriteLine($"{extraCoffee.Description}, ราคา: {extraCoffee.GetCost()}" + Environment.NewLine);
+        Console.WriteLine($"{extraCoffee.Description}, ราคา: {extraCoffee.GetCost()} {Environment.NewLine}");
 
         var milkTea = new MilkTea();
         IBeverage extraMilkTea = new WhipCream(milkTea);
         extraMilkTea = new Pearl(extraMilkTea);
         Console.WriteLine("ชานมพิเศษเพิ่มทอปปิ้ง");
-        Console.WriteLine($"{extraMilkTea.Description}, ราคา: {extraMilkTea.GetCost()}" + Environment.NewLine);
+        Console.WriteLine($"{extraMilkTea.Description}, ราคา: {extraMilkTea.GetCost()} {Environment.NewLine}");
     }
 }
 ```
@@ -213,13 +213,13 @@ class Program
 **Output**
 ```
 กาแฟธรรมดา
-กาแฟ, ราคา: 35
+กาแฟ, ราคา: 35 
 
 กาแฟพิเศษเพิ่มทอปปิ้ง
-กาแฟ + ขมข้นหวาน + วิปครีม + วิปครีม + คาราเมล, ราคา: 86
+กาแฟ + ขมข้นหวาน + วิปครีม + วิปครีม + คาราเมล, ราคา: 86 
 
 ชานมพิเศษเพิ่มทอปปิ้ง
-ชานม + วิปครีม + ไข่มุก, ราคา: 50
+ชานม + วิปครีม + ไข่มุก, ราคา: 50 
 ```
 
 # Credit
