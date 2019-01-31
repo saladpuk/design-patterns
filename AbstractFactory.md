@@ -18,10 +18,10 @@ Provide an interface for creating families of related or dependent objects witho
 
 1. ตอนที่ลูกค้ามาดูเฟอร์นิเจอร์ โปรแกรมจะต้องแสดง `เก้าอี้`, `โซฟา`, `โต๊ะกาแฟ` ให้เขาดู
 1. พวก `เก้าอี้`, `โซฟา`, `โต๊ะกาแฟ` เวลาเอาโชว์จะต้องเป็นสไตล์เดียวกัน เช่น `Modern`, `ArtDeco`, `Victorian`  
-> Note  
-Modern สินค้าจะเป็นสไตล์บ้านๆทั่วไป  
-ArtDeco สินค้าจะเป็นสไตล์อาร์ตสวยงาม  
-Victorian สินค้าจะเป็นสไตล์หรูหราไฮโซ
+> **Note**  
+**Modern** สินค้าจะเป็นสไตล์บ้านๆทั่วไป  
+**ArtDeco** สินค้าจะเป็นสไตล์อาร์ตสวยงาม  
+**Victorian** สินค้าจะเป็นสไตล์หรูหราไฮโซ
 
 ![img](assets/abstractfactory/problem-en.png)
 
