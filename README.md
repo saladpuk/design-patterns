@@ -23,7 +23,7 @@ Pattern ทั้งหมดถูกแบ่งออกเป็น 3 กล
   * [Decorator pattern](Decorator.md)
   * [Facade pattern](Facade.md)
   * Flyweight pattern
-  * Proxy pattern
+  * [Proxy pattern](Proxy.md)
 
 * **Behavioral patterns**  
 วัตถุประสงค์ของกลุ่มนี้คือ ดูแลประสิทธิภาพในการติดต่อกันของ objects ต่างๆ ซึ่งภายในกลุ่มนี้มี patterns อยู่คือ
