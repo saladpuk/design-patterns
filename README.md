@@ -35,7 +35,7 @@ Pattern ทั้งหมดถูกแบ่งออกเป็น 3 กล
   * Memento pattern
   * Observer pattern
   * State pattern
-  * Strategy pattern
+  * [Strategy pattern](Strategy.md)
   * Template method pattern
   * Visitor pattern
 
