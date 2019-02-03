@@ -28,7 +28,7 @@ Pattern ทั้งหมดถูกแบ่งออกเป็น 3 กล
 * **Behavioral patterns**  
 วัตถุประสงค์ของกลุ่มนี้คือ ดูแลประสิทธิภาพในการติดต่อกันของ objects ต่างๆ ซึ่งภายในกลุ่มนี้มี patterns อยู่คือ
   * Chain of responsibility pattern
-  * Command pattern
+  * [Command pattern](Command.md)
   * Interpreter pattern
   * Iterator pattern
   * [Mediator pattern](Mediator.md)
