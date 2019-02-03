@@ -31,7 +31,7 @@ Pattern ทั้งหมดถูกแบ่งออกเป็น 3 กล
   * Command pattern
   * Interpreter pattern
   * Iterator pattern
-  * Mediator pattern
+  * [Mediator pattern](Mediator.md)
   * Memento pattern
   * Observer pattern
   * State pattern
