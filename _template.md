@@ -1,4 +1,5 @@
 ![img](assets/xxx)
+
 # XXX
 xxx
 
@@ -7,8 +8,6 @@ xxx
 
 ## ✌ หลักการแบบสั้นๆ
 1. xxx
-
-![img](assets/xxx)
 
 ## 😢 ปัญหา
 xxx
