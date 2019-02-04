@@ -256,6 +256,9 @@ class Program
 }
 ```
 
+> **Note**  
+สำหรับภาษา C# มีนั้น ทีมพัฒนาได้เตรียม interface สำหรับทำ Command ไว้ให้แล้วนะโยมนะ ซึ่ง interface ตัวนั้นชื่อว่า `ICommand` โยมไม่ต้องไปเขียนใหม่ให้เมื่อยมือหรอก [กดที่นี่เพื่ออ่านต่อ](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.7.2)
+
 **Output**
 ```
 สั่งเปิด, Tv เปิด
