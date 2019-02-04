@@ -26,7 +26,7 @@ Pattern ทั้งหมดถูกแบ่งออกเป็น 3 กล
   * [Proxy pattern](Proxy.md)
 
 * **Behavioral patterns**  
-วัตถุประสงค์ของกลุ่มนี้คือ ดูแลประสิทธิภาพในการติดต่อกันของ objects ต่างๆ ซึ่งภายในกลุ่มนี้มี patterns อยู่คือ
+วัตถุประสงค์ของกลุ่มนี้คือ ช่วยในการทำงานร่วมกันระหว่าง object ต่างๆ ซึ่งภายในกลุ่มนี้มี patterns อยู่คือ
   * Chain of responsibility pattern
   * [Command pattern](Command.md)
   * Interpreter pattern
