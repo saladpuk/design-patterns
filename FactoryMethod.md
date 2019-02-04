@@ -1,4 +1,5 @@
-![img](assets/factorymethod/factory-method-mini.png)
+![img](assets/factorymethod/factory-method.png)
+
 # Factory Method
 Define an interface for creating an object, but let subclasses decide which class to instantiate. The Factory method lets a class defer instantiation it uses to subclasses. (Gang Of Four)
 
@@ -9,8 +10,6 @@ Define an interface for creating an object, but let subclasses decide which clas
 1. **Factory Method** จะมี abstract method 1 ตัว เอาไว้สร้าง object
 1. เมื่อ client ต้องการใช้ object ก็จะมาเรียก abstract method ตัวนั้น เพื่อเอา object ไปใช้
 1. Subclass เป็นคนกำหนดเองว่าจะสร้าง object จาก class ตัวไหน
-
-![img](assets/factorymethod/factory-method.png)
 
 ## 😢 ปัญหา
 สมมุติว่าเรามีโปรแกรมที่ใช้ในการดูแลการขนส่งอยู่ตัวนึง ซึ่งโปรแกรมเราในตอนนี้ ดูแลได้เฉพาะการขนส่งทาง**รถบรรทุก**เท่านั้น เลยทำให้โค้ดทั้งหมดดูแลแค่ `Truck class` เท่านั้น

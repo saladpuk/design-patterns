@@ -1,6 +1,6 @@
-![img](assets/abstractfactory/abstract-factory-mini.png)
-# Abstract Factory
+![img](assets/abstractfactory/abstract-factory.png)
 
+# Abstract Factory
 Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
 
 ## 🎯 เป้าหมายของ pattern นี้
@@ -10,8 +10,6 @@ Provide an interface for creating families of related or dependent objects witho
 1. **Abstract Factory** จะกำหนด interface ที่ใช้ในการสร้าง product แต่ละประเภท และมี abstract method ที่ใช้ในการสร้าง product ต่างๆ
 1. Subclass เป็นคนกำหนดเองว่า product ที่จะสร้างแต่ละตัว จะถูกสร้างจาก class ตัวไหน ซึ่งจะต้องเป็น class ที่อยู่ในกลุ่มเดียวกัน
 1. เมื่อ client ต้องการ product ก็จะมาเรียก Subclass ให้ไปสร้าง product ต่างๆให้
-
-![img](assets/abstractfactory/abstract-factory.png)
 
 ## 😢 ปัญหา
 สมมุติว่าเรามีโปรแกรมจำลองร้านขายเฟอร์นิเจอร์อยู่ตัวนึง ซึ่งมีเงื่อนไขอยู่ว่า

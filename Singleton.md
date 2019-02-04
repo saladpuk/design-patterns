@@ -1,4 +1,5 @@
-![img](assets/singleton/singleton-mini-2x.png)
+![img](assets/singleton/singleton.png)
+
 # Singleton
 The singleton pattern ensures that only one object of a particular class is ever created. All further references to objects of the singleton class refer to the same underlying instance.
 
@@ -9,8 +10,6 @@ The singleton pattern ensures that only one object of a particular class is ever
 1. แก้ไข constructor ของ class ที่ต้องการจะทำให้ไม่มีคนอื่นเข้าถึงได้ (ทำให้ new object ไม่ได้)
 1. สร้าง global access ที่เข้าถึง object นั้นเพื่อให้คนอื่นเรียกใช้
 1. สร้าง object ของคลาสนั้นแล้วเก็บไว้ (เมื่อถูกเรียกใช้)
-
-![img](assets/singleton/singleton.png)
 
 ## 😢 ปัญหา
 ตัว Single Pattern นี้มันแก้ปัญหา 2 เรื่องคือ

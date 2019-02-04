@@ -1,4 +1,5 @@
-![img](assets/strategy/strategy-mini.png)
+![img](assets/strategy/strategy.png)
+
 # Strategy
 Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
 
@@ -10,8 +11,6 @@ Define a family of algorithms, encapsulate each one, and make them interchangeab
 1. สร้าง interface กลางของงานที่แยกออกมา
 1. ตัวทำงานให้ reference interface นั้น
 1. ให้ client เป็นคนกำหนดว่าจะสร้าง object เพื่อเอาไว้ทำงานจาก class ไหน
-
-![img](assets/strategy/strategy.png)
 
 ## 😢 ปัญหา
 สมมุติว่าเรากำลังเขียนโปรแกรมแผนที่ตัวนึง เพื่อเอาไปแข่งกับ Google map และตอนนี้ตัวโปรแกรมมีแค่ `Navigator` class เท่านั้น
