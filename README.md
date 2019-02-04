@@ -33,7 +33,7 @@ Pattern ทั้งหมดถูกแบ่งออกเป็น 3 กล
   * Iterator pattern
   * [Mediator pattern](Mediator.md)
   * Memento pattern
-  * Observer pattern
+  * [Observer pattern](Observer.md)
   * State pattern
   * [Strategy pattern](Strategy.md)
   * Template method pattern
