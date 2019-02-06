@@ -8,7 +8,7 @@ Define the skeleton of an algorithm in an operation, deferring some steps to sub
 สร้าง algorithm ที่สามารถเปลี่ยนการทำงานบางขั้นตอนได้จาก subclass
 
 ## ✌ หลักการแบบสั้นๆ
-1. แตก algorithm ออกเป็น method (บางตัวอาจะเป็น abstract)
+1. แตก algorithm ออกเป็นขั้นๆ แล้วทำให้เป็น method (บางตัวอาจะเป็น abstract)
 1. เขียนลำดับการเรียก method พวกนั้นไว้ภายใน template method
 1. สร้าง subclass เพื่อมาจัดการขั้นตอนเฉพาะทางของเรื่องนั้นๆ
 
