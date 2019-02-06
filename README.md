@@ -48,7 +48,7 @@ Pattern ทั้งหมดถูกแบ่งออกเป็น 3 กล
   * [Observer pattern](Observer.md)
   * State pattern
   * [Strategy pattern](Strategy.md)
-  * Template method pattern
+  * [Template Method pattern](TemplateMethod.md)
   * Visitor pattern
 
 # Credit
