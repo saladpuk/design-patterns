@@ -48,7 +48,7 @@ Pattern ทั้งหมดถูกแบ่งออกเป็น 3 กล
   * Interpreter pattern
   * Iterator pattern
   * [Mediator pattern](Mediator.md)
-  * Memento pattern
+  * [Memento pattern](Memento.md)
   * [Observer pattern](Observer.md)
   * State pattern
   * [Strategy pattern](Strategy.md)
