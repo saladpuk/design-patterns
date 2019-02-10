@@ -53,7 +53,7 @@ Pattern ทั้งหมดถูกแบ่งออกเป็น 3 กล
   * State pattern
   * [Strategy pattern](Strategy.md)
   * [Template Method pattern](TemplateMethod.md)
-  * Visitor pattern
+  * [Visitor pattern](Visitor.md)
 
 # Credit
 https://refactoring.guru  
