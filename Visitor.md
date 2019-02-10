@@ -190,15 +190,14 @@ class XMLExporter : IExporter
 class JsonExporter : IExporter
 {
     public void Visit(Dot shape)
-        => Console.WriteLine($"{{ \"type\": \"จุด\", \"X\": \"{shape.X}\", \"Y\": \"{shape.Y}\" }}");
+        => Console.WriteLine($"{{ \"type\": \"จุด\", \"X\": {shape.X}, \"Y\": {shape.Y} }}");
 
     public void Visit(Circle shape)
-        => Console.WriteLine($"{{ \"type\": \"วงกลม\", \"area\": \"{Math.PI * shape.Radius * shape.Radius}\" }}");
+        => Console.WriteLine($"{{ \"type\": \"วงกลม\", \"area\": {Math.PI * shape.Radius * shape.Radius} }}");
 
     public void Visit(Rectangle shape)
-        => Console.WriteLine($"{{ \"type\": \"สี่เหลี่ยม\", \"area\": \"{shape.Width * shape.Hight}\" }}");
+        => Console.WriteLine($"{{ \"type\": \"สี่เหลี่ยม\", \"area\": {shape.Width * shape.Hight} }}");
 }
-
 
 class Program
 {
@@ -238,9 +237,9 @@ Export to XML
 <shape><type>สี่เหลี่ยม</type><area>200</area></shape>
 
 Export to Json
-{ "type": "จุด", "X": "5", "Y": "10" }
-{ "type": "วงกลม", "area": "78.5398163397448" }
-{ "type": "สี่เหลี่ยม", "area": "200" }
+{ "type": "จุด", "X": 5, "Y": 10 }
+{ "type": "วงกลม", "area": 78.5398163397448 }
+{ "type": "สี่เหลี่ยม", "area": 200 }
 ```
 
 # Credit
