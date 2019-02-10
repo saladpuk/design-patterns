@@ -206,9 +206,9 @@ class Program
     {
         var shapes = new List<IShape>
         {
-            new Dot(),
-            new Circle(),
-            new Rectangle(),
+            new Dot{ X = 5, Y = 10 },
+            new Circle{ Radius = 5 },
+            new Rectangle{ Width = 10, Hight = 20},
         };
 
         Console.WriteLine("Export to XML");
@@ -233,14 +233,14 @@ class Program
 **Output**
 ```
 Export to XML
-<shape><type>จุด</type><X>0</X><Y>0</Y></shape>
-<shape><type>วงกลม</type><area>0</area></shape>
-<shape><type>สี่เหลี่ยม</type><area>0</area></shape>
+<shape><type>จุด</type><X>5</X><Y>10</Y></shape>
+<shape><type>วงกลม</type><area>78.5398163397448</area></shape>
+<shape><type>สี่เหลี่ยม</type><area>200</area></shape>
 
 Export to Json
-{ "type": "จุด", "X": "0", "Y": "0" }
-{ "type": "วงกลม", "area": "0" }
-{ "type": "สี่เหลี่ยม", "area": "0" }
+{ "type": "จุด", "X": "5", "Y": "10" }
+{ "type": "วงกลม", "area": "78.5398163397448" }
+{ "type": "สี่เหลี่ยม", "area": "200" }
 ```
 
 # Credit
