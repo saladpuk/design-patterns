@@ -46,7 +46,7 @@ Pattern ทั้งหมดถูกแบ่งออกเป็น 3 กล
   * [Chain of responsibility pattern](ChainOfResponsibility.md)
   * [Command pattern](Command.md)
   * Interpreter pattern
-  * Iterator pattern
+  * [Iterator pattern](Iterator.md)
   * [Mediator pattern](Mediator.md)
   * [Memento pattern](Memento.md)
   * [Observer pattern](Observer.md)
