@@ -140,7 +140,7 @@ class Program
 }
 ```
 > **Note**  
-สำหรับภาษา C# มีนั้น ทีมพัฒนาได้มีคำสั่งในการทำงานกับของพวกนี้อยู่แล้ว นั่นคือ [event](https://docs.microsoft.com/en-us/dotnet/standard/events) นั่นเอง โยมไม่ต้องไปเขียนใหม่ให้เมื่อยมือหรอก และยังมีพวก [IObserver, IObservable](https://docs.microsoft.com/en-us/dotnet/standard/events/observer-design-pattern) ไม่ก็ [Rx](http://reactivex.io) อีก กดที่ชื่อพวกนั้นเพื่อไปหาศึกษาดูเอาเองนะจ๊ะ
+สำหรับภาษา C# นั้นทีมพัฒนาได้มีคำสั่งในการทำงานกับของพวกนี้อยู่แล้ว นั่นคือ [event](https://docs.microsoft.com/en-us/dotnet/standard/events) นั่นเอง โยมไม่ต้องไปเขียนใหม่ให้เมื่อยมือหรอก และยังมีพวก [IObserver, IObservable](https://docs.microsoft.com/en-us/dotnet/standard/events/observer-design-pattern) ไม่ก็ [Rx](http://reactivex.io) อีก กดที่ชื่อพวกนั้นเพื่อไปหาศึกษาดูเอาเองนะจ๊ะ
 
 **Output**
 ```
