@@ -50,7 +50,7 @@ Pattern ทั้งหมดถูกแบ่งออกเป็น 3 กล
   * [Mediator pattern](Mediator.md)
   * [Memento pattern](Memento.md)
   * [Observer pattern](Observer.md)
-  * State pattern
+  * [State pattern](State.md)
   * [Strategy pattern](Strategy.md)
   * [Template Method pattern](TemplateMethod.md)
   * [Visitor pattern](Visitor.md)
