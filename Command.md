@@ -4,7 +4,7 @@
 Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations.
 
 ## 🎯 เป้าหมายของ pattern นี้
-เปลี่ยน Action ต่างๆให้กลายเป็น object ทำให้โปรแกรมจัดการ action ที่เข้ามาได้หลายรูปแบบ เช่น Undo, Redu
+เปลี่ยน Action ต่างๆให้กลายเป็น object ทำให้โปรแกรมจัดการ action ที่เข้ามาได้หลายรูปแบบ เช่น Undo, Redo
 
 ## ✌ หลักการแบบสั้นๆ
 ตัวนี้ยาวมากรบกวนไปอ่านเองละกัน ใครสรุปสั้นๆได้บอกผมด้วย (Fork ออกไปแล้ว pull request เข้ามาก็ได้)
@@ -83,7 +83,7 @@ Encapsulate a request as an object, thereby letting you parameterize clients wit
 **5.Client** - เป็นคนสร้าง concrete command object เพื่อส่งต่อไปให้กับ invoker ทำงาน
 
 ## 🛠 ตัวอย่างการนำไปใช้งาน
-สมมุติว่าผมต้องการเขียนโปรแกรม รีโมตทีวี โดยมันจะต้อง เปลี่ยนช่องทีวี, เปิดทีวี, ปิดทีวี ได้ และยังรองรับคำสั่ง Undo และ Redu ด้วย (เจ๋งปะละ?)
+สมมุติว่าผมต้องการเขียนโปรแกรม รีโมตทีวี โดยมันจะต้อง เปลี่ยนช่องทีวี, เปิดทีวี, ปิดทีวี ได้ และยังรองรับคำสั่ง Undo และ Redo ด้วย (เจ๋งปะละ?)
 
 ปะไปดูโค้ดตัวอย่างกัน
 
@@ -105,7 +105,7 @@ interface ICommand
 {
     void Execute();
     void Undo();
-    void Redu();
+    void Redo();
 }
 
 // Concrete Commands
@@ -122,7 +122,7 @@ class TurnOnTelevisionCommand : ICommand
     public void Undo()
         => tv.TurnOff();
 
-    public void Redu()
+    public void Redo()
         => tv.TurnOn();
 }
 class TurnOffTelevisionCommand : ICommand
@@ -138,7 +138,7 @@ class TurnOffTelevisionCommand : ICommand
     public void Undo()
         => tv.TurnOn();
 
-    public void Redu()
+    public void Redo()
         => tv.TurnOff();
 }
 class ChangeChannelCommand : ICommand
@@ -162,7 +162,7 @@ class ChangeChannelCommand : ICommand
     public void Undo()
         => tv.ChangeChannel(previousChannel);
 
-    public void Redu()
+    public void Redo()
         => tv.ChangeChannel(channel);
 }
 
@@ -213,13 +213,13 @@ class TelevisionRemoteInvoker
         redoStack.Add(previousCmd);
     }
 
-    public void Redu()
+    public void Redo()
     {
         if(!redoStack.Any())
             return;
         
         var previousCmd = redoStack.Last();
-        previousCmd.Redu();
+        previousCmd.Redo();
         redoStack.Remove(previousCmd);
         undoStack.Add(previousCmd);
     }
@@ -251,7 +251,7 @@ class Program
         remote.Undo();
         
         Console.Write("ทำซ้ำ (CTRL+Y), ");
-        remote.Redu();
+        remote.Redo();
     }
 }
 ```
